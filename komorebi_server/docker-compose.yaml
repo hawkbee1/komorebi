@@ -1,0 +1,44 @@
+services:
+  # Development services
+  postgres:
+    image: pgvector/pgvector:pg16
+    ports:
+      - "8090:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: komorebi
+      POSTGRES_PASSWORD: "GFThPhkctVY5MS_cb8StDg8EvkeMjyuY"
+    volumes:
+      - komorebi_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:6.2.6
+    ports:
+      - "8091:6379"
+    command: redis-server --requirepass "rh2aMMvqv_GMog7wPPZKspQdP8-hmKyg"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+
+  # Test services
+  postgres_test:
+    image: pgvector/pgvector:pg16
+    ports:
+      - "9090:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: komorebi_test
+      POSTGRES_PASSWORD: "HLcBVcAoSrEDbW2-VsN6r407nC_5CB6y"
+    volumes:
+      - komorebi_test_data:/var/lib/postgresql/data
+
+  redis_test:
+    image: redis:6.2.6
+    ports:
+      - "9091:6379"
+    command: redis-server --requirepass "7GxDKwJ3e9XKa5jPhRlQdudDxquX397E"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+
+volumes:
+  komorebi_data:
+  komorebi_test_data:
