@@ -29,8 +29,8 @@ dependencies:
     sdk: flutter
   komorebi_client:
     path: ../komorebi_client
-  serverpod_auth_idp_flutter: 3.2.3
-  serverpod_flutter: 3.2.3
+  serverpod_auth_idp_flutter: 3.4.4
+  serverpod_flutter: 3.4.4
 
 dev_dependencies:
   flutter_lints: '>=3.0.0 <7.0.0'
