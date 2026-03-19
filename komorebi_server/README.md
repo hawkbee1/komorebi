@@ -1,3 +1,13 @@
+Launch the server:
+
+    cd /opt/komorebi/komorebi_server
+    dart run bin/main.dart --apply-migrations
+
+Link with the api url:
+
+Update the API URL in komorebi_flutter/assets/config.json to match your dev desktop's IP address.
+
+
 # komorebi_server
 
 This is the starting point for your Serverpod server.

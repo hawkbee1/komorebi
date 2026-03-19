@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "komorebi_client",
+            "cwd": "komorebi_client",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "komorebi_flutter",
+            "cwd": "komorebi_flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "komorebi_flutter (profile mode)",
+            "cwd": "komorebi_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "komorebi_flutter (release mode)",
+            "cwd": "komorebi_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "komorebi_server",
+            "cwd": "komorebi_server",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
