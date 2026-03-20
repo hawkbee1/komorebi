@@ -1,0 +1,2 @@
+# What is Komorebi?
+It is a gamification app which allows the user to define his starting view with town,  districts, money, gem, character, equipment, position of player, position of distric parts, buildings, fields, woods and so on. By default users get game money and can spend it in its setting to change it (sell/buy). But we can plug apis like the temperature of … a place. Later some custom functionalities.
